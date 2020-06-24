@@ -1,9 +1,10 @@
-import * as data from './data.json'
+import data from './data.json'
 
 const petTypes = []
 for (let key in data) {
   petTypes.push(key)
 }
+
 
 const getBreeds = (name) => {
   const arr = []
@@ -17,5 +18,6 @@ const getBreeds = (name) => {
 
 const cats = getBreeds('cat_breeds')
 const dogs = getBreeds('dog_breeds')
+
 
 export { petTypes, cats, dogs }
